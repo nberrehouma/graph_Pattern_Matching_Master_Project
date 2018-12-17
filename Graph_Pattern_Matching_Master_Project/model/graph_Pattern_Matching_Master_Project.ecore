@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    name="graph_Pattern_Matching_Master_Project" nsURI="http://www.example.org/graph_Pattern_Matching_Master_Project"
-    nsPrefix="graph_Pattern_Matching_Master_Project"/>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="graph_Pattern_Matching_Master_Project" nsURI="http://www.example.org/graph_Pattern_Matching_Master_Project"
+    nsPrefix="graph_Pattern_Matching_Master_Project">
+  <eClassifiers xsi:type="ecore:EClass" name="Graph">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="edges" upperBound="-1"
+        eType="#//Edge" eOpposite="#//Edge/graph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vertices" upperBound="-1"
+        eType="#//Vertex" eOpposite="#//Vertex/graph"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vertex">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graph" lowerBound="1" eType="#//Graph"
+        eOpposite="#//Graph/vertices"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Edge">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graph" lowerBound="1" eType="#//Graph"
+        eOpposite="#//Graph/edges"/>
+  </eClassifiers>
+</ecore:EPackage>
