@@ -1,7 +1,16 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Graph_Pattern_Matching_Master_Project
-Bundle-SymbolicName: Graph_Pattern_Matching_Master_Project; singleton:=true
+Bundle-Name: %pluginName
+Bundle-SymbolicName: Graph_Pattern_Matching_Master_Project;singleton:=true
+Automatic-Module-Name: Graph_Pattern_Matching_Master_Project
 Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-10
+Export-Package: graph_Pattern_Matching_Master_Project,
+ graph_Pattern_Matching_Master_Project.impl,
+ graph_Pattern_Matching_Master_Project.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
