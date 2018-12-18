@@ -2,47 +2,45 @@
  */
 package graph_Pattern_Matching_Master_Project.impl;
 
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
 import graph_Pattern_Matching_Master_Project.Entry;
 import graph_Pattern_Matching_Master_Project.Graph;
 import graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage;
 import graph_Pattern_Matching_Master_Project.Vertex;
 
-import java.util.Collection;
-
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Vertex</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Vertex</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl#getGraph <em>Graph</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl#getName <em>Name</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl#getEntries <em>Entries</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl#getGraph
+ * <em>Graph</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl#getName
+ * <em>Name</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.VertexImpl#getEntries
+ * <em>Entries</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	/**
-	 * The cached value of the '{@link #getGraph() <em>Graph</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getGraph() <em>Graph</em>}' reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getGraph()
 	 * @generated
 	 * @ordered
@@ -50,9 +48,9 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	protected Graph graph;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -60,9 +58,9 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -70,9 +68,9 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getEntries()
 	 * @generated
 	 * @ordered
@@ -80,8 +78,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	protected EList<Entry> entries;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected VertexImpl() {
@@ -89,8 +87,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -99,8 +97,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Graph getGraph() {
@@ -117,8 +115,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Graph basicGetGraph() {
@@ -126,8 +124,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetGraph(Graph newGraph, NotificationChain msgs) {
@@ -145,8 +143,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setGraph(Graph newGraph) {
@@ -167,8 +165,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -176,8 +174,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setName(String newName) {
@@ -189,8 +187,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public EList<Entry> getEntries() {
@@ -202,8 +200,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -219,8 +217,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -235,8 +233,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -255,8 +253,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -278,8 +276,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -299,8 +297,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -317,8 +315,8 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -327,10 +325,10 @@ public class VertexImpl extends MinimalEObjectImpl.Container implements Vertex {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (name: ");
+		result.append(" ( Vertex name: ");
 		result.append(name);
 		result.append(')');
 		return result.toString();
 	}
 
-} //VertexImpl
+} // VertexImpl

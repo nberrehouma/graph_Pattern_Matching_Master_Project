@@ -2,50 +2,50 @@
  */
 package graph_Pattern_Matching_Master_Project.impl;
 
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
 import graph_Pattern_Matching_Master_Project.Edge;
 import graph_Pattern_Matching_Master_Project.Entry;
 import graph_Pattern_Matching_Master_Project.Graph;
 import graph_Pattern_Matching_Master_Project.Graph_Pattern_Matching_Master_ProjectPackage;
 import graph_Pattern_Matching_Master_Project.Vertex;
 
-import java.util.Collection;
-
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Edge</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Edge</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getGraph <em>Graph</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getSource <em>Source</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getTarget <em>Target</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getLabel <em>Label</em>}</li>
- *   <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getEntries <em>Entries</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getGraph
+ * <em>Graph</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getSource
+ * <em>Source</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getTarget
+ * <em>Target</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getLabel
+ * <em>Label</em>}</li>
+ * <li>{@link graph_Pattern_Matching_Master_Project.impl.EdgeImpl#getEntries
+ * <em>Entries</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	/**
-	 * The cached value of the '{@link #getGraph() <em>Graph</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getGraph() <em>Graph</em>}' reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getGraph()
 	 * @generated
 	 * @ordered
@@ -54,8 +54,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSource()
 	 * @generated
 	 * @ordered
@@ -64,8 +64,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 
 	/**
 	 * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getTarget()
 	 * @generated
 	 * @ordered
@@ -73,9 +73,9 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	protected Vertex target;
 
 	/**
-	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getLabel()
 	 * @generated
 	 * @ordered
@@ -83,9 +83,9 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	protected static final String LABEL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getLabel()
 	 * @generated
 	 * @ordered
@@ -93,9 +93,9 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	protected String label = LABEL_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getEntries() <em>Entries</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getEntries()
 	 * @generated
 	 * @ordered
@@ -103,8 +103,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	protected EList<Entry> entries;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected EdgeImpl() {
@@ -112,8 +112,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -122,8 +122,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Graph getGraph() {
@@ -140,8 +140,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Graph basicGetGraph() {
@@ -149,8 +149,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetGraph(Graph newGraph, NotificationChain msgs) {
@@ -168,8 +168,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setGraph(Graph newGraph) {
@@ -190,8 +190,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Vertex getSource() {
@@ -208,8 +208,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Vertex basicGetSource() {
@@ -217,8 +217,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setSource(Vertex newSource) {
@@ -230,8 +230,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Vertex getTarget() {
@@ -248,8 +248,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Vertex basicGetTarget() {
@@ -257,8 +257,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setTarget(Vertex newTarget) {
@@ -270,8 +270,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLabel() {
@@ -279,8 +279,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setLabel(String newLabel) {
@@ -292,8 +292,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public EList<Entry> getEntries() {
@@ -305,8 +305,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -322,8 +322,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -338,8 +338,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -366,8 +366,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -395,8 +395,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -422,8 +422,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -444,8 +444,8 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -454,10 +454,10 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (label: ");
+		result.append(" ( Edge label: ");
 		result.append(label);
 		result.append(')');
 		return result.toString();
 	}
 
-} //EdgeImpl
+} // EdgeImpl
