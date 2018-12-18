@@ -3,6 +3,8 @@
   <viewpoint:DAnalysis xmi:id="_msegIAH1EemYPPvVJ1KzNw" selectedViews="_nYppoAH1EemYPPvVJ1KzNw" version="13.0.0.201804031646">
     <semanticResources>graph_Pattern_Matching_Master_Project.ecore</semanticResources>
     <semanticResources>graph_Pattern_Matching_Master_Project.genmodel</semanticResources>
+    <semanticResources>../build.properties</semanticResources>
+    <semanticResources>../plugin.properties</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_nYppoAH1EemYPPvVJ1KzNw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_nsiO8AH1EemYPPvVJ1KzNw" name="graph_Pattern_Matching_Master_Project" repPath="#_nfeqYAH1EemYPPvVJ1KzNw">
